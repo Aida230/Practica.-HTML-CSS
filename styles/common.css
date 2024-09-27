@@ -30,3 +30,9 @@ tag es la etiqueta basica, lo pisan los otros 2, class va despues de id, id prio
 * {
     box-sizing: boder-box;
 }
+
+@media print {
+    header.header, .footer, .banner { /*header.header al escribirlo dos veces aumenta su especicividad*/
+        display: none;
+    } 
+}

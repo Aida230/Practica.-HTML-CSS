@@ -3,6 +3,10 @@
     top: 0;
     z-index: 99;
     background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between; /* esto es lo que los poe en el corner*/
+    align-items: center; /* alinea los elementos para que esten centardos y no se deformen*/
+    padding: 1rem; /* el espacio de arrba y de abajo y de los laos*/
     .image {
         width: 20%;
         min-width: 200px;
@@ -13,19 +17,19 @@
             list-style: none;
             padding: 0;
             margin: 0;
+            display: flex; /* hay que ponerlos tambien en su listado especifico*/
+            gap: 10px; 
         }
     }
-}
-.btn {
-    color: var(--main-text-color);
-    background-color: var(--main-brand-color);
-    text-decoration: none;
-    padding: 0.7rem;
-    display: inline-block;
-    border-radius: 5px;
 }
 
 .hidden {
     display: none;
     /*display: none; es para ocultar elementos */
+}
+
+@media screen and (width > 768px) {
+    .hidden {
+        display: block;
+    }
 }

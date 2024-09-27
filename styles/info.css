@@ -1,0 +1,31 @@
+.info{
+    width: 80%;
+    margin: 0 auto; /*esto pone marge automatico a iz y der pero usando with*/
+    max-width: 768px;
+    .assets {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: 16em;
+            z-index: 2;
+        }
+        video{
+            top: 30px;
+            position: absolute;
+            width: 10em;
+            z-index: 1;
+        }
+    }
+}
+
+@media screen and (width > 768px) {
+    .info {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 2.5em;
+      align-items: center;
+    }
+  }
+
